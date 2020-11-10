@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/pd0mz/go-dmr"
-	"github.com/pd0mz/go-dmr/fec"
+	"github.com/polkabana/go-dmr"
+	"github.com/polkabana/go-dmr/fec"
 )
 
 // Full Link Control Opcode

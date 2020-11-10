@@ -2,7 +2,7 @@
 
 Golang Digital Mobile Radio protocols.
 
-[![Build Status](https://travis-ci.com/pd0mz/go-dmr.svg?token=24oDsRPafHpYb3stEpVa&branch=master)](https://travis-ci.com/pd0mz/go-dmr)
+Updated orignal [go-dmr](https://github.com/pd0mz/go-dmr) as for 2020 year.
 
 ## References
 
@@ -11,7 +11,8 @@ and Radio spectrum Matters (ERM); Digital Mobile Radio (DMR) Systems; Part 1:
 DMR Air Interface (AI) protocol*, [ETSI TS 102 361-1][ETSI TS 102 361-1].
 
 The Brandmeister Homebrew protocol is specified in
-[IPSC Protocol Specs for homebrew DMR repeater][homebrew specs]
+[IPSC Protocol Specs for homebrew DMR repeater][homebrew specs] (sic! obsoleted)
+
 by [Hans DL5DI](mailto:dl5di@gmx.de),
 [Jonathan Naylor (G4KLXG)](https://twitter.com/g4klx) and Torsten Schultze
 (DG1HT).
@@ -32,3 +33,8 @@ and links to test the protocols.
 
  * Rudy Hardeman (PD0ZRY)
  * Artem Prilutskiy (R3ABM)
+ 
+ Updated by EU1ADI. Thanks to:
+ 
+  * Cortney T. Buffington (N0MJS), hblink3 project
+  * Jonathan Naylor (G4KLX), MMDVMHost project

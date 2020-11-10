@@ -3,7 +3,7 @@ package lc
 import (
 	"fmt"
 
-	dmr "github.com/pd0mz/go-dmr"
+	dmr "github.com/polkabana/go-dmr"
 )
 
 // Data Format

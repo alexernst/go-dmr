@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/pd0mz/go-dmr"
+	"github.com/polkabana/go-dmr"
 )
 
 var (

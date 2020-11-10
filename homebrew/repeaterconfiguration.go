@@ -3,7 +3,7 @@ package homebrew
 import (
 	"fmt"
 
-	"github.com/pd0mz/go-dmr"
+	"github.com/polkabana/go-dmr"
 )
 
 // RepeaterConfiguration holds information about the current repeater. It
@@ -16,6 +16,7 @@ type RepeaterConfiguration struct {
 	TXFreq      uint32
 	TXPower     uint8
 	ColorCode   uint8
+	Slots       uint8
 	Latitude    float32
 	Longitude   float32
 	Height      uint16
@@ -42,6 +43,9 @@ func (r *RepeaterConfiguration) String() string {
 	if r.TXPower > 99 {
 		r.TXPower = 99
 	}
+	if r.Slots > 4 {
+		r.Slots = 4
+	}
 	if r.SoftwareID == "" {
 		r.SoftwareID = dmr.SoftwareID
 	}
@@ -59,8 +63,8 @@ func (r *RepeaterConfiguration) String() string {
 	}
 
 	var b = "RPTC"
-	b += fmt.Sprintf("%-8s", r.Callsign)
 	b += fmt.Sprintf("%08x", r.ID)
+	b += fmt.Sprintf("%-8s", r.Callsign)
 	b += fmt.Sprintf("%09d", r.RXFreq)
 	b += fmt.Sprintf("%09d", r.TXFreq)
 	b += fmt.Sprintf("%02d", r.TXPower)
@@ -69,7 +73,8 @@ func (r *RepeaterConfiguration) String() string {
 	b += lon
 	b += fmt.Sprintf("%03d", r.Height)
 	b += fmt.Sprintf("%-20s", r.Location)
-	b += fmt.Sprintf("%-20s", r.Description)
+	b += fmt.Sprintf("%-19s", r.Description)
+	b += fmt.Sprintf("%01d", r.Slots)
 	b += fmt.Sprintf("%-124s", r.URL)
 	b += fmt.Sprintf("%-40s", r.SoftwareID)
 	b += fmt.Sprintf("%-40s", r.PackageID)

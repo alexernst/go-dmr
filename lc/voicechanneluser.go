@@ -3,7 +3,7 @@ package lc
 import (
 	"fmt"
 
-	"github.com/pd0mz/go-dmr/lc/serviceoptions"
+	"github.com/polkabana/go-dmr/lc/serviceoptions"
 )
 
 // VoiceChannelUserPDU Conforms to ETSI TS 102-361-2 7.1.1.(1 and 2)

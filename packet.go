@@ -45,13 +45,18 @@ var DataTypeName = map[uint8]string{
 
 // Call Type
 const (
-	CallTypePrivate uint8 = iota
-	CallTypeGroup
+	CallTypeGroup uint8 = iota
+	CallTypePrivate
 )
 
 var CallTypeName = map[uint8]string{
-	CallTypePrivate: "private",
 	CallTypeGroup:   "group",
+	CallTypePrivate: "private",
+}
+
+var CallTypeShortName = map[uint8]string{
+	CallTypeGroup:   "TG",
+	CallTypePrivate: "",
 }
 
 // Packet represents a frame transported by the Air Interface
@@ -77,6 +82,12 @@ type Packet struct {
 
 	// 0 for group call, 1 for unit to unit
 	CallType uint8
+
+	// BER ratio
+	BER uint8
+    
+    // RSSI level
+	RSSI uint8
 
 	// The on-air DMR data with possible FEC fixes to the AMBE data and/or Slot Type and/or EMB, etc
 	Data []byte // 34 bytes

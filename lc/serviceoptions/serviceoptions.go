@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	dmr "github.com/pd0mz/go-dmr"
+	dmr "github.com/polkabana/go-dmr"
 )
 
 // Priority Levels

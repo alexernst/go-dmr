@@ -5,7 +5,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/pd0mz/go-dmr"
+	"github.com/polkabana/go-dmr"
 )
 
 var (
